@@ -1,0 +1,6 @@
+{
+  "name": "Pizza Cutter",
+  "description": "A pizza cutter.",
+  "price": 5.99,
+  "image": "http://localhost:8080/cutters.png"
+}
