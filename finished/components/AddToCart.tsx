@@ -6,10 +6,13 @@ import { useStore } from "@/src/store";
 
 export default function AddToCart() {
   const { name, price } = useStore();
+  console.log(name,"name",price)
   return (
     <VisualWrapper name="AddToCart">
       <h1 className="font-bold text-3xl">{name}</h1>
-      <p className="text-2xl">Price ${price.toFixed(2)}</p>
+      {price &&
+      <p className="text-2xl">Price ${price}</p>
+    }
       <div className="flex justify-end">
         <button
           type="button"
